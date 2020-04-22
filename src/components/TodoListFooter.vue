@@ -31,8 +31,9 @@
     color: grey;
     padding: 14px;
     margin-top: 24px;
-    margin-bottom: 14px;
     background-color: #f3f3f3;
     border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
   }
 </style>

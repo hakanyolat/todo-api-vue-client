@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
-    <div class="app-title textShineBlack fadeInUp">
-      <b>AWESOME</b> TODO APP
+    <div class="app-title">
+      <img src="@/assets/logo.png" width="256"/>
     </div>
     <todo-list></todo-list>
   </div>
@@ -10,6 +10,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import TodoList from "./components/TodoList.vue";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default Vue.extend({
   name: 'App',
@@ -20,8 +21,10 @@ export default Vue.extend({
 </script>
 
 <style>
-  * {
-    box-sizing: border-box;
+
+  body{
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
   }
 
   #app {
@@ -34,7 +37,7 @@ export default Vue.extend({
   }
 
   .container{
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
   }
 

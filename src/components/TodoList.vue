@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <input type="text" id="todo-input" placeholder="What needs to be done" v-model="newTodo" @keyup.enter="addTodo">
+  <div id="todo-list" class="shadow-sm p-3 mb-5 bg-white rounded">
+    <input type="text" id="todo-input" class="form-control form-text text-muted" placeholder="What are you planning to do?" v-model="newTodo" @keyup.enter="addTodo">
 
     <todo-item
       v-for="todo in todos"
@@ -58,17 +58,14 @@
 </script>
 
 <style lang="scss">
-  #todo-input{
-    width: 100%;
-    padding: 10px 18px;
-    font-size: 18px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  #todo-list{
+    background-color: #fff;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 
-    &:focus{
-      outline: 0;
-    }
+  }
+  #todo-input{
+    margin-bottom: 24px;
   }
 </style>
