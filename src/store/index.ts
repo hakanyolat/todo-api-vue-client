@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import Axios from "axios";
 
 Vue.use(Vuex);
-Axios.defaults.baseURL = "http://127.0.0.1:3000";
+Axios.defaults.baseURL = process.env.VUE_APP_API_SERVER;
 
 export default new Vuex.Store({
   state: {
